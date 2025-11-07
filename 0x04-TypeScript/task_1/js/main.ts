@@ -25,7 +25,8 @@ const teacher1: Teacher = {
 };
 
 function printTeacher({ firstName, lastName }: printTeacherFunction) {
-	return `${firstName.charAt(0)}. ${lastName}`;
+	firstName = firstName.charAt(0);
+	return `${firstName}. ${lastName}`;
 }
 
 console.log(printTeacher(teacher1));
