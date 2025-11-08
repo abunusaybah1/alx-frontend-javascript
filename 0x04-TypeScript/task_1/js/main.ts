@@ -36,7 +36,7 @@ interface studentInterface {
 	lastName: string;
 }
 
-class studentClass {
+class StudentClass implements studentInterface {
 	public firstName: string;
 	public lastName: string;
 
@@ -54,6 +54,6 @@ class studentClass {
 	}
 }
 
-const student: studentClass = new studentClass("Abdul", "Matiin");
+const student: StudentClass = new StudentClass("Abdul", "Matiin");
 console.log(`Student Name: ${student.displayName}`);
 console.log(`Student Status: ${student.workOnHomework}`);
