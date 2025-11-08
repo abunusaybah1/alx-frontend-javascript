@@ -36,7 +36,7 @@ interface studentInterface {
 	lastName: string;
 }
 
-class studentClass implements studentInterface {
+class studentClass {
 	public firstName: string;
 	public lastName: string;
 
